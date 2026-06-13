@@ -110,7 +110,7 @@ git clone  https://github.com/devil99-ai/amazon-test.git
 Navigate to project directory:
 
 ```bash
-cd amazon-automation-assignment
+cd amazon-test
 ```
 
 Install dependencies:
