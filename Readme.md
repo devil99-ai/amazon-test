@@ -189,8 +189,14 @@ Amazon's UI is dynamic and may change frequently. To improve stability:
 ## Sample Console Output
 
 ```text
-iPhone Price : $999.99
-Galaxy Price : $849.99
+Price of iphone is: ₹64,900
+Price of galaxy s25 is: ₹62,999
+===============================================
+Suite
+Total tests run: 2, Passes: 2, Failures: 0, Skips: 0
+===============================================
+
+
 ```
 
 ---
