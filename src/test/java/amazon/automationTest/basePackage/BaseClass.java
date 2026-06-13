@@ -86,7 +86,7 @@ public class BaseClass {
 	public static void screenshot(String filename) {
 		File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(file, new File("C:\\Users\\svksh\\eclipse-workspace\\Framework\\src\\test\\java\\screenshots\\Screenshots\\"+filename+".jpg"));
+			FileUtils.copyFile(file, new File("src/test/java/amazon/automationTest/screenshots/"+filename+".jpg"));
 		}catch (IOException e) {
 			// TODO: handle exception
 			e.printStackTrace();
