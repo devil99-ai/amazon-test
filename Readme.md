@@ -138,7 +138,11 @@ mvn -version
 Clone the repository:
 
 ```bash
+<<<<<<< HEAD
 git clone https://github.com/devil99-ai/amazon-test.git
+=======
+git clone  https://github.com/devil99-ai/amazon-test.git
+>>>>>>> 37d8859ce8dd49dc9e5ca304ac95b98183457863
 ```
 
 Navigate to project:
@@ -203,7 +207,18 @@ This configuration executes both test classes simultaneously.
 After execution, reports are generated under:
 
 ```text
+<<<<<<< HEAD
 test-output/
+=======
+Price of iphone is: ₹64,900
+Price of galaxy s25 is: ₹62,999
+===============================================
+Suite
+Total tests run: 2, Passes: 2, Failures: 0, Skips: 0
+===============================================
+
+
+>>>>>>> 37d8859ce8dd49dc9e5ca304ac95b98183457863
 ```
 
 Including:
