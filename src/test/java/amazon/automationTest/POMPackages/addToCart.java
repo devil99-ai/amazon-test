@@ -22,21 +22,7 @@ public class addToCart extends BaseClass {
 	public void addproductToCart() {
 		wait.until(ExpectedConditions.visibilityOfAllElements(addToCartBtn));
 		if(!addToCartBtn.isEmpty()) {
-			System.out.println("cart button displayed");
 			addToCartBtn.get(0).click();
-			System.out.println("clicked on cart button");
 		}
 	}
-//	public void gotoCartAndGetPrice() {
-//		By gotoCartLocator =
-//	            By.xpath("//a[contains(@href,'cart')]");
-//		WebElement cartBtn =
-//	            wait.until(
-//	                    ExpectedConditions.elementToBeClickable(
-//	                            gotoCartLocator));
-//
-//	    System.out.println("go to cart button displayed");
-//
-//	    cartBtn.click();
-//	}
 }
