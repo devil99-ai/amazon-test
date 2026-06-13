@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-13T11:40:33 IST" name="Suite" finished-at="2026-06-13T11:40:51 IST" duration-ms="17849">
+    <groups>
+    </groups>
+    <test started-at="2026-06-13T11:40:33 IST" name="Test" finished-at="2026-06-13T11:40:51 IST" duration-ms="17849">
+      <class name="amazon.automationTest.testLayer.IphoneTest">
+        <test-method is-config="true" signature="initSetup()[pri:0, instance:amazon.automationTest.testLayer.IphoneTest@7817fd62]" started-at="2026-06-13T11:40:38 IST" name="initSetup" finished-at="2026-06-13T11:40:45 IST" duration-ms="7082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method signature="TestCase001()[pri:0, instance:amazon.automationTest.testLayer.IphoneTest@7817fd62]" started-at="2026-06-13T11:40:45 IST" name="TestCase001" finished-at="2026-06-13T11:40:49 IST" duration-ms="4637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase001 -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:amazon.automationTest.testLayer.IphoneTest@7817fd62]" started-at="2026-06-13T11:40:51 IST" name="TearDown" finished-at="2026-06-13T11:40:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- amazon.automationTest.testLayer.IphoneTest -->
+      <class name="amazon.automationTest.testLayer.GalaxyTest">
+        <test-method is-config="true" signature="initSetup()[pri:0, instance:amazon.automationTest.testLayer.GalaxyTest@3bd82cf5]" started-at="2026-06-13T11:40:33 IST" name="initSetup" finished-at="2026-06-13T11:40:38 IST" duration-ms="4649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method signature="TestCase001()[pri:0, instance:amazon.automationTest.testLayer.GalaxyTest@3bd82cf5]" started-at="2026-06-13T11:40:45 IST" name="TestCase001" finished-at="2026-06-13T11:40:50 IST" duration-ms="5165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase001 -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:amazon.automationTest.testLayer.GalaxyTest@3bd82cf5]" started-at="2026-06-13T11:40:50 IST" name="TearDown" finished-at="2026-06-13T11:40:51 IST" duration-ms="890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- amazon.automationTest.testLayer.GalaxyTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
