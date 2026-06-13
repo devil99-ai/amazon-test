@@ -104,7 +104,7 @@ Both test cases are executed in parallel using TestNG.
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone  https://github.com/devil99-ai/amazon-test.git
 ```
 
 Navigate to project directory:
