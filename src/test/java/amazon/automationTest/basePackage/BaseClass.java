@@ -4,7 +4,10 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
@@ -14,6 +17,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import amazon.automationTest.utility.TimeUtils;
@@ -42,12 +47,28 @@ public class BaseClass {
 		
 	}
 	//step2
-	public static void initiation() {
+	public static void initiation() throws MalformedURLException {
 		 wait= new WebDriverWait(driver, Duration.ofSeconds(20));
 		// driver path
 		//maximize, pageload, implicit, get url
 		String browserName = prop.getProperty("browser");
-		if(browserName.equals("Firefox")) {
+		String executionType =prop.getProperty("executionType");
+        if(executionType.equalsIgnoreCase("cloud")) {
+            String username = prop.getProperty("username");
+            String accessKey = prop.getProperty("access_key");
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("browserName", browserName);
+            capabilities.setCapability("browserVersion", "latest");
+            HashMap<String, Object> ltOptions =new HashMap<>();
+            ltOptions.put("platformName", "Windows 11");
+            ltOptions.put("build", "Amazon Assignment");
+            ltOptions.put("project", "Automation Assessment");
+            ltOptions.put("w3c", true);
+            capabilities.setCapability("LT:Options", ltOptions);
+
+            driver = new RemoteWebDriver(new URL("https://" +username +":" +accessKey +"@hub.lambdatest.com/wd/hub"),capabilities);
+
+        }else if(browserName.equals("Firefox")) {
 			driver = new FirefoxDriver();
 			
 		}else if(browserName.equals("chrome")) {

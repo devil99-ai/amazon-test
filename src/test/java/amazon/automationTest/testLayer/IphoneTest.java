@@ -1,5 +1,7 @@
 package amazon.automationTest.testLayer;
 
+import java.net.MalformedURLException;
+
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -19,7 +21,7 @@ public class IphoneTest extends BaseClass {
 		super();
 	}
 	@BeforeTest
-	public void initSetup() {
+	public void initSetup() throws MalformedURLException {
 		initiation();
 		screenshot("Amazon Web Page");
 		addCart=new addToCart();
